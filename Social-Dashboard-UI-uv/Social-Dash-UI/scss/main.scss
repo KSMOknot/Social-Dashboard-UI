@@ -1,0 +1,291 @@
+/* StyleSheet */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* Primary */
+
+$limeGreen: hsl(163, 72%, 41%);
+$brightRed: hsl(356, 69%, 56%);
+
+$facebook: hsl(195, 100%, 50%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear-gradient(to right, #FFD63F, #FF1A61);
+$youTube: hsl(348, 97%, 39%);
+
+/* Dark Theme */
+
+$d-Toggle: linear-gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+/* Light Theme */
+
+$lt-Toggle: hsl(230, 22%, 74%);
+
+/* Neutral */
+
+/* Dark Theme */
+
+$veryDarkBlue: hsl(230, 17%, 14%);  /* (BG) */
+$veryDarkBlue: hsl(232, 19%, 15%); /* (Top BG Pattern) */
+$darkDesaturatedBlue: hsl(228, 28%, 20%); /* Card BG) */
+$desaturatedBlue: hsl(228, 34%, 66%); /* (Text) */
+$white: hsl(0, 0%, 100%); /*(Text)*/
+
+/* Light Theme */
+
+$white: hsl(0, 0%, 100%); /*(BG)*/
+$veryPaleBlue: hsl(225, 100%, 98%); /*(Top BG Pattern)*/
+$lightGrayishBlue: hsl(227, 47%, 96%); /*(Card BG)*/
+$darkGrayishBlue: hsl(228, 12%, 44%); /*(Text)*/
+$veryDarkBlue: hsl(230, 17%, 14%); /*(Text)*/
+
+/* Typography */
+
+/* Body */
+
+$overviewCardHeadings: 14px;  /* font size */
+
+/* Font */
+
+$font-stack:'Inter', sans-serif;
+$weights-med: 400; 
+$weights-bold: 700;
+
+
+
+
+
+/* ====== Light Theme ====== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+}
+
+.wrapper {
+    background: white;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background: $veryPaleBlue;
+    height: 250px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.top-left-title {
+    font-family: $font-stack;
+    font-weight: $weights-med;
+    color: $darkGrayishBlue;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 5%;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+    color: #444;
+}
+
+.tl-follow {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: $darkGrayishBlue;
+}
+
+.toggle {
+    background: $lt-Toggle;
+    height:20px;
+    width: 50px;
+    position: relative;
+    left: 90%;
+    border-radius: 25px;
+}
+
+
+/* Follower Top Cards */
+.followers-display {
+    width: 0 auto;
+    display: flex;
+    flex-direction: ltr;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.views {
+    color: $veryDarkBlue;
+    position: relative;
+    bottom: 100px;
+    width: 250px;
+    height: 210px;
+    border-radius: 3%;
+    text-align: center;
+    margin: 0 20px;
+    background: $lightGrayishBlue;
+}
+
+.fb-card { 
+    border-top: 4px solid $facebook;
+}
+.tw-card {
+    border-top: 4px solid $twitter;
+}
+
+.insta-card {
+    border-top: 4px solid #FFD63F;
+}
+
+.yt-card {
+    border-top: 4px solid $youTube;
+}
+
+.social-view {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.social-icon {
+    float: left;
+    position: relative;
+    left: 60px;
+}
+
+.current-followers {
+    font-size: 3rem;
+    font-weight: $weights-bold;
+    padding: 20px 20px 0px 20px;
+}
+
+.fol-up-trend {
+    display: flex;
+    flex-direction: ltr;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 5px 0 5px;
+}
+
+.fol-text {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+
+.daily-followers-trend {
+    color: $limeGreen;
+    font-size: 13px;
+    font-weight: $weights-bold;
+}
+
+.arrowUp,
+.arrowDown {
+    margin-right: 5px;
+}
+
+.negative {
+    color: $brightRed;
+}
+
+/* Overview Section */
+
+.overview-ui {
+    width: 0 auto;
+    height: 350px;
+    display: flex;
+    flex-direction: ltr;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.overview-title {
+    font-family: sans-serif;
+    font-weight: $weights-bold;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: $darkGrayishBlue;
+    margin-left: 3em;
+}
+
+.card {
+    background: $lightGrayishBlue;
+    width: 250px;
+    height: 145px;
+    margin: 10px auto;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: ltr;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-titles {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: $darkGrayishBlue;
+    margin: 25px 70px 30px 25px;
+    width: 40%;
+}
+
+.ovr-icons {
+    width: 25px;
+    height: 25px;
+}
+
+.total-engage {
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: $weights-bold;
+    color: $veryDarkBlue;
+    width: 100px;
+    margin: 0 50px 10px 25px;
+}
+
+.daily-trend {
+    font-family: sans-serif;
+    color: $limeGreen;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.daily-trend > img {
+    margin: 0 4px 3px 0;
+}
+
+.negative {
+    color: $brightRed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
