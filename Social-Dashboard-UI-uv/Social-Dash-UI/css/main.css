@@ -1,0 +1,235 @@
+/* StyleSheet */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* Primary */
+/* Dark Theme */
+/* Light Theme */
+/* Neutral */
+/* Dark Theme */
+/* (BG) */
+/* (Top BG Pattern) */
+/* Card BG) */
+/* (Text) */
+/*(Text)*/
+/* Light Theme */
+/*(BG)*/
+/*(Top BG Pattern)*/
+/*(Card BG)*/
+/*(Text)*/
+/*(Text)*/
+/* Typography */
+/* Body */
+/* font size */
+/* Font */
+/* ====== Light Theme ====== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  background: white;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  background: #f5f7ff;
+  height: 250px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.top-left-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #63687e;
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  left: 5%;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  color: #444;
+}
+
+.tl-follow {
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: #63687e;
+}
+
+.toggle {
+  background: #aeb3cb;
+  height: 20px;
+  width: 50px;
+  position: relative;
+  left: 90%;
+  border-radius: 25px;
+}
+
+/* Follower Top Cards */
+.followers-display {
+  width: 0 auto;
+  display: flex;
+  flex-direction: ltr;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.views {
+  color: #1e202a;
+  position: relative;
+  bottom: 100px;
+  width: 250px;
+  height: 210px;
+  border-radius: 3%;
+  text-align: center;
+  margin: 0 20px;
+  background: #f0f2fa;
+}
+
+.fb-card {
+  border-top: 4px solid deepskyblue;
+}
+
+.tw-card {
+  border-top: 4px solid #1ca0f2;
+}
+
+.insta-card {
+  border-top: 4px solid #FFD63F;
+}
+
+.yt-card {
+  border-top: 4px solid #c4032a;
+}
+
+.social-view {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.social-icon {
+  float: left;
+  position: relative;
+  left: 60px;
+}
+
+.current-followers {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 20px 20px 0px 20px;
+}
+
+.fol-up-trend {
+  display: flex;
+  flex-direction: ltr;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 5px 0 5px;
+}
+
+.fol-text {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+.daily-followers-trend {
+  color: #1db489;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.arrowUp,
+.arrowDown {
+  margin-right: 5px;
+}
+
+.negative {
+  color: #dc414c;
+}
+
+/* Overview Section */
+.overview-ui {
+  width: 0 auto;
+  height: 350px;
+  display: flex;
+  flex-direction: ltr;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.overview-title {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #63687e;
+  margin-left: 3em;
+}
+
+.card {
+  background: #f0f2fa;
+  width: 250px;
+  height: 145px;
+  margin: 10px auto;
+  border-radius: 4%;
+  display: flex;
+  flex-direction: ltr;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card-titles {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #63687e;
+  margin: 25px 70px 30px 25px;
+  width: 40%;
+}
+
+.ovr-icons {
+  width: 25px;
+  height: 25px;
+}
+
+.total-engage {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e202a;
+  width: 100px;
+  margin: 0 50px 10px 25px;
+}
+
+.daily-trend {
+  font-family: sans-serif;
+  color: #1db489;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.daily-trend > img {
+  margin: 0 4px 3px 0;
+}
+
+.negative {
+  color: #dc414c;
+}
+
+/*# sourceMappingURL=main.css.map */
